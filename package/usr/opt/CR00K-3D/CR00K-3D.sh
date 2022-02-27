@@ -1,3 +1,4 @@
+@@ -0,0 +1,423 @@
 #!/bin/bash
 ##############################################################################
 ##############################################################################
@@ -128,15 +129,19 @@ kill_pid() {
 ## Banner
 banner() {
 	cat <<- EOF
-${WHITE} [${RED} C${WHITE} ]          ${WHITE} [${RED} R${WHITE} ]               ${WHITE} [${RED} K${WHITE} ]          [${RED} D${WHITE} ]
-${WHITE} [^^^]        l  [^^^]                [^^^]          [^^^]
-${RED} ██████╗██████╗ ${WHITE} ██████╗  ██████╗ ${RED}██╗  ██╗${WHITE}██████╗ ${WHITE}██████╗ 
-${RED}██╔════╝██╔══██╗${WHITE}██╔═████╗██╔═████╗${RED}██║ ██╔╝${WHITE}╚════██╗${WHITE}██╔══██╗
-${RED}██║     ██████╔╝${WHITE}██║██╔██║██║██╔██║${RED}█████╔╝ ${WHITE} █████╔╝${WHITE}██║  ██║
-${RED}██║     ██╔══██╗${WHITE}████╔╝██║████╔╝██║${RED}██╔═██╗ ${WHITE} ╚═══██╗${WHITE}██║  ██║
-${RED}╚██████╗██║  ██║${WHITE}╚██████╔╝╚██████╔╝${RED}██║  ██╗${WHITE}██████╔╝${WHITE}██████╔╝
-${RED} ╚═════╝╚═╝  ╚═╝${WHITE} ╚═════╝  ╚═════╝ ${RED}╚═╝  ╚═╝${WHITE}╚═════╝ ${WHITE}╚═════╝ 
-${GREEN}[_C_]___________[_R_]___|_________|___[_K_]__________[_D_]
+
+${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}] ${RED}[${WHITE}FINAL${RED}]${GREEN} TARGETED 2FA SECRET ${RED}[${WHITE}2FA BYPASS${RED}]  ${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]                                                                   ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED} ██████╗██████╗ ${WHITE} ██████╗  ██████╗ ${RED}██╗  ██╗       ${RED} ██████╗ ${WHITE}██████╗  ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██╔════╝██╔══██╗${WHITE}██╔═████╗██╔═████╗${RED}██║ ██╔╝       ${RED} ╚════██╗${WHITE}██╔══██╗ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██║     ██████╔╝${WHITE}██║██╔██║██║██╔██║${RED}█████╔╝ ${WHITE} █████${RED}   █████╔╝${WHITE}██║  ██║ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██║     ██╔══██╗${WHITE}████╔╝██║████╔╝██║${RED}██╔═██╗        ${RED}  ╚═══██╗${WHITE}██║  ██║ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}╚██████╗██║  ██║${WHITE}╚██████╔╝╚██████╔╝${RED}██║  ██╗       ${RED} ██████╔╝${WHITE}██████╔╝ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED} ╚═════╝╚═╝  ╚═╝${WHITE} ╚═════╝  ╚═════╝ ${RED}╚═╝  ╚═╝       ${RED} ╚═════╝ ${WHITE}╚═════╝  ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]                                                                   ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}] ${RED}[${WHITE}FINAL${RED}]${GREEN} TARGETED 2FA SECRET ${RED}[${WHITE}2FA BYPASS${RED}]  ${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]                                                                   ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]                                                                   ${RED}[${WHITE}+${RED}]
 	EOF
 }
 
@@ -144,22 +149,16 @@ ${GREEN}[_C_]___________[_R_]___|_________|___[_K_]__________[_D_]
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-
-${WHITE}[^^^]          l  [^^^]                    [^^^]            [^^^]
-${WHITE}[ o ]-------------[ o ]--------------------[ o ]------------[ o ]
-${WHITE}[|||]${GREEN} BUILT IN EDMONTON ALBERTA DURING RYNIX BY RANDOM RYANS${WHITE} [|||]
-${WHITE}[   ]${RED} -----------------------------------------------------${WHITE}  [   ]
-${WHITE}[   ]${RED}  █████  ██████   █████    █████  ██  ██ ██████ ██████ ${WHITE} [   ]
-${WHITE}[   ]${RED} ██   ██ ██    █ ██   ██  ██   ██ ██ ██      ██ ██  ██  ${WHITE}[   ]
-${WHITE}[   ]${RED} █       ███████ █  +  █  █  0  █ ████    █████ ██   █  ${WHITE}[   ]
-${WHITE}[   ]${RED} ██   ██ ██  ██  ██   ██  ██   ██ ██ ██      ██ ██  ██  ${WHITE}[   ]
-${WHITE}[   ]${RED}  █████  ██   ██  █████    █████  ██  ██ ██████ ██████ ${WHITE} [   ]
-${WHITE}[___]_____________[___]___|____________|___[___]____________[___]
-${RED}[${WHITE}-${RED}]${BLUE} CLOUDSERVER : ${GREEN}https://linode.com/${RED}[${WHITE}100$ FREE CREDIT USE PREPAID CC${RED}]"
-${RED}[${WHITE}-${RED}]${BLUE} ALWAYS TEST YOUR LINK, AND REMEBER THIS DOESNT LOG TO BYPASS DETECTION"
+${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}] ${RED}[${WHITE}FINAL${RED}]${GREEN} TARGETED 2FA SECRET ${RED}[${WHITE}2FA BYPASS${RED}]  ${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED} ██████╗██████╗ ${WHITE} ██████╗  ██████╗ ${RED}██╗  ██╗       ${RED} ██████╗ ${WHITE}██████╗  ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██╔════╝██╔══██╗${WHITE}██╔═████╗██╔═████╗${RED}██║ ██╔╝       ${RED} ╚════██╗${WHITE}██╔══██╗ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██║     ██████╔╝${WHITE}██║██╔██║██║██╔██║${RED}█████╔╝ ${WHITE} █████${RED}   █████╔╝${WHITE}██║  ██║ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}██║     ██╔══██╗${WHITE}████╔╝██║████╔╝██║${RED}██╔═██╗        ${RED}  ╚═══██╗${WHITE}██║  ██║ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}╚██████╗██║  ██║${WHITE}╚██████╔╝╚██████╔╝${RED}██║  ██╗       ${RED} ██████╔╝${WHITE}██████╔╝ ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED} ╚═════╝╚═╝  ╚═╝${WHITE} ╚═════╝  ╚═════╝ ${RED}╚═╝  ╚═╝       ${RED} ╚═════╝ ${WHITE}╚═════╝  ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}] ${RED}[${WHITE}FINAL${RED}]${GREEN} TARGETED 2FA SECRET ${RED}[${WHITE}2FA BYPASS${RED}]  ${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]${RED}[${WHITE}+${RED}]
 	EOF
 }
-
 ## Dependencies
 dependencies() {
 	echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
@@ -360,14 +359,15 @@ start_localhost() {
 tunnel_menu() {
 	{ clear; banner_small; }
 	cat <<- EOF
-                ${RED}[${WHITE}++${RED}]${ORANGE} BEFORE WE PROCEED THERE ARE SOME TERMS AND CONDITIOND YOU MUST AGREE TO ${RED}[${WHITE}++${RED}]${ORANGE}
-                ${RED}[${WHITE}++${RED}]${ORANGE} 1. YOU WILL NOT USE THIS ON SOMEONE WHITHOUT THERE APROVAL FIRST ${RED}[${WHITE}++${RED}]${ORANGE}
-                ${RED}[${WHITE}++${RED}]${ORANGE} 2. YOU ARE AWARE THAT IMPROPER USE CAN BE ILLIGAL
-                ${RED}[${WHITE}++${RED}]${ORANGE} 3. I RANDOMRYAN'S TAKE NO RESPONSIBILTY FOR YOUR ACTIONS
-                ${RED}[${WHITE}++${RED}]${ORANGE} DO YOU AGREE TO THE TERMS AND CONDITIONS TYPE "I AGREE or YES"
+${RED}[${WHITE}+${RED}]${ORANGE}  BEFORE WE PROCEED THERE ARE SOME TERMS&CONDITIOND YOU MUST AGREE ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${ORANGE}  1. YOU WILL NOT USE THIS ON SOMEONE WHITHOUT THERE APROVAL FIRST ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${ORANGE}  2. YOU ARE AWARE THAT IMPROPER USE CAN BE ILLIGAL                ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${ORANGE}  3. I RANDOMRYAN'S TAKE NO RESPONSIBILTY FOR YOUR ACTIONS         ${RED}[${WHITE}+${RED}]
+${RED}[${WHITE}+${RED}]${ORANGE}  4. DO YOU AGREE TO THE TERMS AND CONDITIONS TYPE "I AGREE YES"   ${RED}[${WHITE}+${RED}]
+
 	EOF
 
-	read -p "HIT ENTER TO START ${RED}[${WHITE}NOTE:IF YOU CAN RUN IT, YOU KNOW WHAT YOUR DOING${RED}]${ORANGE} "
+	read -p "HIT ENTER TO START ${RED}[${WHITE}NOTE:IF YOU CAN RUN IT, YOU KNOW WHAT YOUR DOING${RED}]${RED}[${WHITE}+${RED}] "
 
 	case $REPLY in 
 		*)
@@ -398,28 +398,18 @@ site_gmail() {
 main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		 ${RED}[${WHITE}::${RED}]${ORANGE} [WEBSITES ${WHITE}  HAND BUILT BY RYNIX] ${RED}[${WHITE}::${RED}]${ORANGE}
-		 ${RED}[${WHITE}::${RED}]${ORANGE} [HTTPS://GITHUB.COM/${WHITE}RANDOMRYANS] ${RED}[${WHITE}::${RED}]${ORANGE}
-	 	 ${RED}[${WHITE}FINAL|01${RED}]${ORANGE} GOOGLE-2FA ${GREEN} [MODDED FOR 2FA+AUTOFIL]       
-	 	 ${RED}[${WHITE}BETA |02${RED}]${ORANGE} OUTLOOK+++  ${RED} 
-
-		  
+		${RED}[${WHITE}+${RED}]${ORANGE} ${RED}[${WHITE}ENGINEERING${RED}]${GREEN}${RED}[BUILT BY RYNIX${RED}]${ORANGE}${RED}[${WHITE}++${RED}]${ORANGE}${RED}[${WHITE}HTTPS://GITHUB.COM/${GREEN}RANDOMRYANS${RED}] ${RED}[${WHITE}+${RED}]${ORANGE} 
 	EOF
-
-	read -p "${RED}[${WHITE}++${RED}]${WHITE} FUCK 'EM ALL EHHHH ${RED}[SELECT TO GIT'EM] ${GREEN}": 
-
+	read -p "${RED}[${WHITE}+${RED}]${RED}  [${WHITE}WELCOME TO OUR HOME AND NATIVE LAND${ORANGE}  EHHHH! ${RED}[${WHITE}ENTER TO CONTINUE${RED}] ${RED}[${WHITE}+${RED}] "
 	case $REPLY in 
-	        1 | 01)
+	        *)
 			website="google_new"
-			tunnel_menu;;
-	        2 | 02)
-			website="microsoft"
 			tunnel_menu;;
 		99)
 			about;;
 		0 | 00 )
 			msg_exit;;
-		*)
+		7)
 			echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
 			{ sleep 1; main_menu; };;
 	
