@@ -48,25 +48,21 @@ $ ./CR00K-3D.sh
 
 
 
-##
-# METHOD TO THE MADNESS 2022
 
-### SMARTER PEOPLE INSTRUCTIONS 
-# IF YOU UNDERSTAND ALOT MORE THEN EVERYONE YES.. SKIP EVERYTHING  
-    
-### a very simplified write up to help anyone figure this out ! 
+## a very simplified write up to help anyone figure this out ! 
 
-## FIRST I INSTALL WSL ON WINDOWS 10
+# WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE
+# OR LINODE CLOUD SERVER 
 
-# open powershell - RUN AS ADMIN
+    $ open powershell - RUN AS ADMIN
+    $ wsl --install
+    $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+    $ reboot
+    $ DONT ENABLE WSL2... wsl1 work's great
+    $ termux on your droid is an option also 
+    $ exit
 
-    $# wsl --install
-    $# Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-    $# dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-    $# reboot
-    $# DONT ENABLE WSL2... wsl1 work's great
-    $# termux on your droid is an option also 
-    $# exit
 
  WSL 2 requires an update to its kernel component. 
  For information please visit
@@ -74,9 +70,9 @@ $ ./CR00K-3D.sh
  install the update open the exe follow the prompt
  open powershell - RUN AS ADMIN
 
-    $# wsl –set-default-version 2
-    $# exit
-    $# make sure virtualization is enabled in you bios 
+    $ wsl –set-default-version 2
+    $ exit
+    $ make sure virtualization is enabled in you bios 
 
  go to ms store search kali and install
  launch the kali exe file 
@@ -88,21 +84,22 @@ $ ./CR00K-3D.sh
 
 ## WSL INSTALL completed 
 
-    ## <--------example that it installed successful ---->
+    # <--------example that it installed successful ---->
     #   
     #
-    $#   ┌──(<username>💀project-rynix)-[]
-    $#   └─#
+    $   ┌──(<username>💀project-rynix)-[]
+    $   └─#
     #
-    ## <-----------------end of example------------------>
+    # <-----------------end of example------------------>
 
 ## open powershell - RUN AS ADMIN (run either cmd)
 
     $ kali 
-    $ wsl 
-    # terminal will now change to linuX
+    $         OR 
+    $                wsl  
 
-# Command Option 1 (TO UNDERSTAND)
+
+# Command Option 1 (TO IF YOUR NEW TO TERMINAL)
 
     ┌──(<username>💀project-rynix)-[]
     └─# sudo su
@@ -149,7 +146,6 @@ $ ./CR00K-3D.sh
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/]
     └─#  $ sudo apt install git && cd && cd /mnt/c/users/<username>/Downloads/ $$ git clone https://github.com/RandomRyans/CR00K-3D 
 
-# Now to Run the Project ....
 
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
     └─# cd CR00K-3D
