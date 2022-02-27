@@ -15,7 +15,6 @@
 
 It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
 
-##
 
 ### Features
 ```
@@ -37,7 +36,7 @@ $ cd  CR00K-3D-main
 
 $ ./CR00K-3D.sh
 ```
-### Dependencies
+## Dependencies
 # CR00K-3D requires following programs to run properly - 
 - `php`
 - `wget`
