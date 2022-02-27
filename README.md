@@ -18,29 +18,28 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 ##
 
 ### Features
-
+```
 - run this on linode.com cloud servers for maximum anon status / 24/7 server
 - Mask URL WITH multi qr-code (https://qr-code-generator.com)
 - Almost FULLY AUTO LAUNCHED
 - Docker support (checkout `docker-legacy` branch)
 - Automatic Cloud Flaired Tunnel
-
+```
 ### Installation
 
-- Just, Clone this repository -
+# Just, Clone this repository -
 ```
 $ git clone git://github.com/RandomRyans/CR00K-3D
-```
+
 $ unzip CR00K-3D-main.zip
-```
+
 $ cd  CR00K-3D-main
-```
+
 $ ./CR00K-3D.sh
 ```
 
 ### Dependencies
-
-**`CR00K-3D`** requires following programs to run properly - 
+# **`CR00K-3D`** requires following programs to run properly - 
 - `php`
 - `wget`
 - `curl`
