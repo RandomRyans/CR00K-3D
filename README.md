@@ -34,18 +34,13 @@ $ cd  CR00K-3D-main
 
 $ ./CR00K-3D.sh
 ```
-## Dependencies
-### CR00K-3D requires following programs to run properly - 
-- `php`
-- `wget`
-- `curl`
-- `git`
 
-### All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
+ 
+# a very simplified write up to help anyone figure this out ! 
 
-## a very simplified write up to help anyone figure this out ! 
+### WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
 
-# WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
+-----------------------------------------------------------------------------------
 
     $ open powershell - RUN AS ADMIN
     $ wsl --install
@@ -56,6 +51,9 @@ $ ./CR00K-3D.sh
     $ termux on your droid is an option also 
     $ exit
 
+### WSL 2 INSTALL (IF NEEDED)
+
+-----------------------------------------------------------------------------------
 
  WSL 2 requires an update to its kernel component. 
  For information please visit
@@ -92,13 +90,14 @@ $ ./CR00K-3D.sh
 -----------------------------------------------------------------------------------
 
     $ kali 
-    $         OR 
-    $                wsl  
+ 
+    $ wsl  
 
 
 ## Command Option 1 (TO IF YOUR NEW TO TERMINAL)
 
------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------'
+
     ┌──(<username>💀project-rynix)-[]
     └─# sudo su
         enter password: (you wont see anything when you type)
