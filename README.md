@@ -1,5 +1,5 @@
 
-<p align="center">A EVIL DARK  Automated  Link THat will make you regret everything</p>
+## <p align="center">A EVIL DARK  Automated  Link THat will make you regret everything</p>
 
 ##
 <p align="center"><img src="https://github.com/RandomRyans/CR00K-3D/blob/main/imgs/REPO.png?raw=true" width="640"/></p>
@@ -37,15 +37,14 @@ $ cd  CR00K-3D-main
 
 $ ./CR00K-3D.sh
 ```
-
 ### Dependencies
-# **`CR00K-3D`** requires following programs to run properly - 
+# CR00K-3D requires following programs to run properly - 
 - `php`
 - `wget`
 - `curl`
 - `git`
 
-> All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
+All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
 
 
 ##
