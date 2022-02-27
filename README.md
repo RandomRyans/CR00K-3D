@@ -2,6 +2,8 @@
 <p align="center">A EVIL DARK  Automated  Link THat will make you regret everything</p>
 
 ##
+<img src="https://github.com/RandomRyans/CR00K-3D/blob/main/imgs/REPO.png?raw=true" width="128"/>
+https://github.com/RandomRyans/CR00K-3D/blob/main/imgs/REPO.png?raw=true
 
 <h3><p align="center">Disclaimer</p></h3>
 
