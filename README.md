@@ -46,6 +46,8 @@ $ ./CR00K-3D.sh
 ### All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
 
 
+
+
 ##
 # METHOD TO THE MADNESS 2022
 
@@ -66,25 +68,25 @@ $ ./CR00K-3D.sh
     $# termux on your droid is an option also 
     $# exit
 
-# WSL 2 requires an update to its kernel component. 
-# For information please visit
-# https://aka.ms/wsl2kernel
-# install the update open the exe follow the prompt
-# open powershell - RUN AS ADMIN
+ WSL 2 requires an update to its kernel component. 
+ For information please visit
+ https://aka.ms/wsl2kernel
+ install the update open the exe follow the prompt
+ open powershell - RUN AS ADMIN
 
     $# wsl –set-default-version 2
     $# exit
     $# make sure virtualization is enabled in you bios 
 
-# go to ms store search kali and install
-# launch the kali exe file 
-# SEACH IN YOUR WINDOWS SEACRH BAR OR TYLE KALI IN POWERSHELL
-# allow install to complete
+ go to ms store search kali and install
+ launch the kali exe file 
+ SEACH IN YOUR WINDOWS SEACRH BAR OR TYLE KALI IN POWERSHELL
+ allow install to complete
 
     $ enter new consol username
     $ enter new terminal username
 
-### WSL INSTALL completed 
+## WSL INSTALL completed 
 
     ## <--------example that it installed successful ---->
     #   
