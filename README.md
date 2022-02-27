@@ -30,9 +30,9 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 $ git clone git://github.com/RandomRyans/CR00K-3D
 ```
 
-- Change to cloned directory and run `CR00K-3D` -
+- Change to cloned directory and run `CR00K-3D.sh` -
 ```
-$ ./Ryn1x.sh
+$ CR00K-3D.sh
 ```
 
 ### Dependencies
@@ -43,7 +43,7 @@ $ ./Ryn1x.sh
 - `curl`
 - `git`
 
-> All the dependencies will be installed automatically when you run `CR00K-3D` for the first time.
+> All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
 
 > Supported Platform : **`Termux`**, **`Ubuntu/Debian/Kali/Parrot`**, **`Arch Linux/Manjaro`**, **`Fedora`**
 
