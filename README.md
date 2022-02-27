@@ -10,7 +10,6 @@ IN PROGTRESS
 
 <p align="center">
 <img src="https://img.shields.io/badge/Version-2.2-green?style=for-the-badge">
-<img src="https://img.shields.io/github/license/htr-tech/zphisher?style=for-the-badge">
 <img src="https://img.shields.io/github/stars/htr-tech/zphisher?style=for-the-badge">
 <img src="https://img.shields.io/github/issues/htr-tech/zphisher?color=red&style=for-the-badge">
 <img src="https://img.shields.io/github/forks/htr-tech/zphisher?color=teal&style=for-the-badge">
@@ -48,24 +47,23 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 - Just, Clone this repository -
 ```
-$ git clone git://github.com/RandomRyans/[PR0J3CT-RYN1X]
+$ git clone git://github.com/RandomRyans/CR00K-3D
 ```
 
-- Change to cloned directory and run `Ryn1x.sh` -
+- Change to cloned directory and run `CR00K-3D` -
 ```
-$ cd [PR0JECT-RYN1X]
 $ ./Ryn1x.sh
 ```
 
 ### Dependencies
 
-**`[PR0J3CT-RYN1X]`** requires following programs to run properly - 
+**`CR00K-3D`** requires following programs to run properly - 
 - `php`
 - `wget`
 - `curl`
 - `git`
 
-> All the dependencies will be installed automatically when you run `[PR0J3CT-RYN1X]` for the first time.
+> All the dependencies will be installed automatically when you run `CR00K-3D` for the first time.
 
 > Supported Platform : **`Termux`**, **`Ubuntu/Debian/Kali/Parrot`**, **`Arch Linux/Manjaro`**, **`Fedora`**
 
@@ -78,12 +76,3 @@ $ ./Ryn1x.sh
 <img src=".imgs/wf.gif"/>
 </p>
 
-### Special Thanks :
-
-- [**Aditya Shakya**](https://github.com/adi1090x)
-- [**1RaY-1**](https://github.com/1RaY-1)
-- [**TheLinuxChoice**](https://twitter.com/linux_choice)
-- [**DarksecDevelopers**](https://github.com/DarksecDevelopers)
-- [**Moises Tapia**](https://github.com/MoisesTapia)
-- [**HTR-TECH**](https://github.com/htr-tech)
->>>>>>> Stashed changes
