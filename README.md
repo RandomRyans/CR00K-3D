@@ -17,7 +17,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 ### Features
 
-- Latest and updated login pages.
+- run this on linode.com cloud servers for maximum anon status / 24/7 server
 - Mask URL WITH multi qr-code (https://qr-code-generator.com)
 - Almost FULLY AUTO LAUNCHED
 - Docker support (checkout `docker-legacy` branch)
@@ -29,10 +29,11 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 ```
 $ git clone git://github.com/RandomRyans/CR00K-3D
 ```
-
-- Change to cloned directory and run `CR00K-3D.sh` -
+$ unzip CR00K-3D-main.zip
 ```
-$ CR00K-3D.sh
+$ cd  CR00K-3D-main
+```
+$ ./CR00K-3D.sh
 ```
 
 ### Dependencies
@@ -45,14 +46,6 @@ $ CR00K-3D.sh
 
 > All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
 
-> Supported Platform : **`Termux`**, **`Ubuntu/Debian/Kali/Parrot`**, **`Arch Linux/Manjaro`**, **`Fedora`**
 
 ##
-
-<h3 align="center">
-:: Workflow ::
-</h3>
-<p align="center">
-<img src=".imgs/wf.gif"/>
-</p>
 
