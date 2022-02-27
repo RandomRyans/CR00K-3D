@@ -24,9 +24,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Docker support (checkout `docker-legacy` branch)
 - Automatic Cloud Flaired Tunnel
 ```
-## Installation
-
-### Just, Clone this repository -
+## Installation - Just, Clone this repository 
 ```
 $ git clone git://github.com/RandomRyans/CR00K-3D
 
@@ -47,8 +45,7 @@ $ ./CR00K-3D.sh
 
 ## a very simplified write up to help anyone figure this out ! 
 
-# WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE
-# OR LINODE CLOUD SERVER 
+# WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
 
     $ open powershell - RUN AS ADMIN
     $ wsl --install
