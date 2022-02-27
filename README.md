@@ -45,10 +45,6 @@ $ ./CR00K-3D.sh
 
 ### All the dependencies will be installed automatically when you run `CR00K-3D.sh` for the first time.
 
-
-
-
-
 ## a very simplified write up to help anyone figure this out ! 
 
 # WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE
@@ -84,6 +80,8 @@ $ ./CR00K-3D.sh
 
 ## WSL INSTALL completed 
 
+-----------------------------------------------------------------------------------
+
     # <--------example that it installed successful ---->
     #   
     #
@@ -94,13 +92,16 @@ $ ./CR00K-3D.sh
 
 ## open powershell - RUN AS ADMIN (run either cmd)
 
+-----------------------------------------------------------------------------------
+
     $ kali 
     $         OR 
     $                wsl  
 
 
-# Command Option 1 (TO IF YOUR NEW TO TERMINAL)
+## Command Option 1 (TO IF YOUR NEW TO TERMINAL)
 
+-----------------------------------------------------------------------------------
     ┌──(<username>💀project-rynix)-[]
     └─# sudo su
         enter password: (you wont see anything when you type)
@@ -141,11 +142,18 @@ $ ./CR00K-3D.sh
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/Downloads/]
     └─# 
 
-# COMMAND OPTION  (SINGLE - COMMAND)
+### COMMAND OPTION  (SINGLE - COMMAND)
+
+-----------------------------------------------------------------------------------
 
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/]
     └─#  $ sudo apt install git && cd && cd /mnt/c/users/<username>/Downloads/ $$ git clone https://github.com/RandomRyans/CR00K-3D 
+ 
 
+    
+## TO RUN THE PROFRAM   
+
+-----------------------------------------------------------------------------------
 
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
     └─# cd CR00K-3D
@@ -158,9 +166,9 @@ $ ./CR00K-3D.sh
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
     └─# bash  ./CR00K-3D.sh
     
-# FOLLOW INSTRUCTIONS 
+## FOLLOW INSTRUCTIONS 
 
-## FIRST SCREEN 
+### FIRST SCREEN 
 -------------------------------------------------------------------------------------
     [+][+][+][+][+] [FINAL] TARGETED 2FA SECRET [2FA BYPASS]  [+][+][+][+][+]
     [+]                                                                   [+]
@@ -179,7 +187,7 @@ $ ./CR00K-3D.sh
 
      $#    [NOW HIT ENTER]
     
-# SECOND SCREEN
+## SECOND SCREEN
     
 -----------------------------------------------------------------------------------    
     [+][+][+][+][+] [FINAL] TARGETED 2FA SECRET [2FA BYPASS]  [+][+][+][+][+]
@@ -198,18 +206,20 @@ $ ./CR00K-3D.sh
 
     HIT ENTER TO START [NOTE:IF YOU CAN RUN IT, YOU KNOW WHAT YOUR DOING][+]
 
-# THIRD SCREEN 
+## THIRD SCREEN 
+
 ------------------------------------------------------------------------------------
+    [-] Initializing... ( http://127.0.0.1:8080 )
 
-[-] Initializing... ( http://127.0.0.1:8080 )
+    [-] Setting up server...
 
-[-] Setting up server...
+    [-] Starting PHP server...
 
-[-] Starting PHP server...
+    [-] Launching server..
 
-[-] Launching server..
 
-# FINAL SCREEN
+## FINAL SCREEN
+
 ------------------------------------------------------------------------------------
     [+][+][+][+][+] [FINAL] TARGETED 2FA SECRET [2FA BYPASS]  [+][+][+][+][+]
     [+] ██████╗██████╗  ██████╗  ██████╗ ██╗  ██╗        ██████╗ ██████╗  [+]
@@ -224,18 +234,18 @@ $ ./CR00K-3D.sh
 
     [-] SECRET-MASK : https://signin.qr-code-generator.com/[FREE 14 DAY TRIAL]
     
- # LIVE DATA FEED
+ ## LIVE DATA FEED
+ 
 -----------------------------------------------------------------------------------
                                   +++++ V2.0 +++++
-
-
-
     $ INFO: xxx.xxx.xxx.xxx
     $ XTRA: Mozilla/x.x (Windows/iphone/android xx.x; ) Gecko xxxxxxxx
     $ User: xxxxxxxxxxxx@xxxxxx.com
     $ Pass: xxxxxxxxxxxx
     $ CODE: xxxxxxxxxx
 
+# DONE  
 
-### DONE  
+-----------------------------------------------------------------------------------
+
 
