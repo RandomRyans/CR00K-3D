@@ -1,0 +1,8 @@
+Package: CR00K-3D
+Version: V (FINAL)
+Installed-Size: 9400
+Architecture: all
+Maintainer: @RandomRyans
+Depends: php, wget, git, curl
+Homepage: https://github.com/randomryans/CR00K-3D
+Description: An automated  tool with 2 templates. This Tool is made for educational purpose only !
