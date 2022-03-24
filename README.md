@@ -1,6 +1,7 @@
 
-## <p align="center">A EVIL DARK  Automated  Link THat will make you regret everything</p>
+## <p align="center"> Built on a broken heart and a hurt soul</p>
 
+<p align="center">CLICK CLICK BANG BANG GANG GANG, WELCOME TO CR00K-3D THE START OF CANADAS BLACK SIDE</p>
 ##
 <p align="center"><img src="https://github.com/RandomRyans/CR00K-3D/blob/main/imgs/REPO.png?raw=true" width="640"/></p>
 
