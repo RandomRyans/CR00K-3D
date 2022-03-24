@@ -26,14 +26,20 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 ```
 ## Installation - Just, Clone this repository 
 ```
+$ cd 
+
+$ cd /
+
+$ cd opt
+
 $ git clone git://github.com/RandomRyans/CR00K-3D
 
-$ unzip CR00K-3D-main.zip
+$ cd  CR00K-3D
 
-$ cd  CR00K-3D-main
+$ chmod 777 *
 
 $ ./CR00K-3D.sh
-```
+
 
  
 # a very simplified write up to help anyone figure this out ! 
@@ -43,6 +49,7 @@ $ ./CR00K-3D.sh
 -----------------------------------------------------------------------------------
 
     $ open powershell - RUN AS ADMIN
+    
     $ wsl --install
     $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -143,7 +150,7 @@ $ ./CR00K-3D.sh
 -----------------------------------------------------------------------------------
 
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/]
-    └─#  $ sudo apt install git && cd && cd /mnt/c/users/<username>/Downloads/ $$ git clone https://github.com/RandomRyans/CR00K-3D 
+    └─#  $ sudo apt install git && cd /mnt/c/users/<username>/Downloads/ && git clone https://github.com/RandomRyans/CR00K-3D && cd CR00K-3D && chmod 777 * ./CR00K- 3D
  
 
     
@@ -153,6 +160,9 @@ $ ./CR00K-3D.sh
 
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
     └─# cd CR00K-3D
+    
+    ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
+    └─# chmod 777 *
   
     ┌──(root💀project-rynix)-[/mnt/c/users/<username>/desktop/DEBUG/]
     └─# ./CR00K-3D.sh
