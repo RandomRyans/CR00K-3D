@@ -25,8 +25,14 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Docker support (checkout `docker-legacy` branch)
 - Automatic Cloud Flaired Tunnel
 ```
-## Installation - Just, Clone this repository 
+## Installation - install proccess from fresh linux shell install 
     $ open powershell - RUN AS ADMIN
+    $ sudo ssu
+    $ [sudo] password for username: < when you type nothing with appear but dont worry your typing)
+
+    $ apt update
+    $ apt upgrade
+    $ apt install git
     $ cd
     $ cd /
     $ cd opt
@@ -36,13 +42,11 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
     $ ./CR00K-3D.sh 
     $ hit enter 
     $ hit enter 
-    $ cd 
-
-
+    $ DONE url is build your website is now active and ready
+    
 # a very simplified write up to help anyone figure this out ! 
 
 ## WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
-
     $ open powershell - RUN AS ADMIN
     
     $ wsl --install
@@ -58,15 +62,13 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
     $ DONT ENABLE WSL2... wsl1 work's great
     $ termux on your droid is an option also 
 
-### WSL 2 INSTALL (IF NEEDED)
+### WSL 2 INSTALL (not recomended your computer might not be compatible with this step)
 
 
- WSL 2 requires an update to its kernel component. 
- For information please visit
- https://aka.ms/wsl2kernel
- install the update open the exe follow the prompt
- open powershell - RUN AS ADMIN
-
+ WSL 2 requires an update to its kernel component. For information please visit
+ https://aka.ms/wsl2kernel install the update open the exe follow the prompt
+ 
+    $ open powershell - RUN AS ADMIN
     $ wsl –set-default-version 2
     $ exit
     $ make sure virtualization is enabled in you bios 
