@@ -26,7 +26,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Automatic Cloud Flaired Tunnel
 ```
 ## Installation - Just, Clone this repository 
-```
+
 $ cd 
 
 $ cd /
@@ -43,25 +43,25 @@ $ ./CR00K-3D.sh
 
 
  
-# a very simplified write up to help anyone figure this out ! 
+ a very simplified write up to help anyone figure this out ! 
 
-### WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
-
------------------------------------------------------------------------------------
+## WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
 
     $ open powershell - RUN AS ADMIN
     
     $ wsl --install
-    $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-    $ reboot
+    $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    $ # you will see this pop up on the shell
+    $ # Do you want to restart the computer to complete this operation now?
+        [Y] Yes  [N] No  [?] Help (default is "Y"): 
+    $ # hit enter or type y or type yes, your system must reboot
     $ DONT ENABLE WSL2... wsl1 work's great
     $ termux on your droid is an option also 
     $ exit
 
 ### WSL 2 INSTALL (IF NEEDED)
 
------------------------------------------------------------------------------------
 
  WSL 2 requires an update to its kernel component. 
  For information please visit
