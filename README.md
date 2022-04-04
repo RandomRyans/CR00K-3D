@@ -26,15 +26,18 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Automatic Cloud Flaired Tunnel
 ```
 ## Installation - Just, Clone this repository 
-   $ cd 
-   $ cd /
-   $ cd opt
-   $ git clone git://github.com/RandomRyans/CR00K-3D
-   $ cd  CR00K-3D
-   $ chmod 777 *
-   $ ./CR00K-3D.sh 
-   $ hit enter 
-   $ hit enter 
+    $ open powershell - RUN AS ADMIN
+    $ cd
+    $ cd /
+    $ cd opt
+    $ git clone git://github.com/RandomRyans/CR00K-3D
+    $ cd  CR00K-3D 
+    $ chmod 777 *
+    $ ./CR00K-3D.sh 
+    $ hit enter 
+    $ hit enter 
+    $ cd 
+
 
 # a very simplified write up to help anyone figure this out ! 
 
@@ -45,11 +48,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
     $ wsl --install
     $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-   
-   
-   
-## WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
-
+    
     $ The requested operation is successful. Changes will not be effective until the system is rebooted.
     $ PS C:\WINDOWS\system32> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     $ Do you want to restart the computer to complete this operation now?
