@@ -26,24 +26,17 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 - Automatic Cloud Flaired Tunnel
 ```
 ## Installation - Just, Clone this repository 
+   $ cd 
+   $ cd /
+   $ cd opt
+   $ git clone git://github.com/RandomRyans/CR00K-3D
+   $ cd  CR00K-3D
+   $ chmod 777 *
+   $ ./CR00K-3D.sh 
+   $ hit enter 
+   $ hit enter 
 
-$ cd 
-
-$ cd /
-
-$ cd opt
-
-$ git clone git://github.com/RandomRyans/CR00K-3D
-
-$ cd  CR00K-3D
-
-$ chmod 777 *
-
-$ ./CR00K-3D.sh
-
-
- 
- a very simplified write up to help anyone figure this out ! 
+# a very simplified write up to help anyone figure this out ! 
 
 ## WSL 1NSTALL - NEEDED IF YOU DONT HAVE A LINUX MACHINE OR LINODE CLOUD SERVER 
 
