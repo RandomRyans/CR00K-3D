@@ -53,14 +53,15 @@ $ ./CR00K-3D.sh
     $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
    
-   # you will see this pop up on the shell 
-   
-  # Do you want to restart the computer to complete this operation now?
-  # [Y] Yes  [N] No  [?] Help (default is "Y"): 
- 
-  # hit enter or type y or type yes, your system must reboot
-  # DONT ENABLE WSL2... wsl1 work's great
-  # termux on your droid is an option also 
+## You will see this pop up on the shell  
+  $ The requested operation is successful. Changes will not be effective until the system is rebooted.
+  $ PS C:\WINDOWS\system32> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+  $ Do you want to restart the computer to complete this operation now?
+  $ [Y] Yes  [N] No  [?] Help (default is "Y"): 
+  
+  $ hit enter or type y or type yes, your system must reboot
+  $ DONT ENABLE WSL2... wsl1 work's great
+  $ termux on your droid is an option also 
 
 ### WSL 2 INSTALL (IF NEEDED)
 
