@@ -18,24 +18,689 @@
     <script type="text/javascript" async="" src="./index_files/ga.js.download">
     </script>
     <script>(function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();
-    </script>
-<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck={};__ez.template={};__ez.template.isOrig=true;__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.ck.get=function(e,n){null!==n&&(e=e+"_"+n);for(var o=e+"=",t=decodeURIComponent(document.cookie).split(";"),i=0;i<t.length;i++){for(var c=t[i];" "===c.charAt(0);)c=c.substring(1);if(0===c.indexOf(o))return c.substring(o.length,c.length)}return""},__ez.ck.setByCat=function(e,n){if(-1===e.indexOf("path=")&&(e+="; path=/"),"undefined"!=typeof cmpIsOn){if(null!=n){var o=__ez.ck.get("ezCMPCookieConsent",null);-1!==(o=o.substring(1,o.length)).indexOf(n+"=1")?document.cookie=e:""===o&&"undefined"!=typeof cmpCookies&&(void 0===cmpCookies[n]&&(cmpCookies[n]=[]),cmpCookies[n].push(e))}}else document.cookie=e};__ez.queue=function(){var e=0,i=0,n=[],t=!1,r=[],o=[],s=!0,a={func:function(e,i,t,r,o,s,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===t?null:t instanceof Array?t:[t],this.isBlock=r,this.blockedBy=o,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){d("... func = "+e),l.isInitialized=!0,l.isComplete=!0,d("... func.apply: "+e);var i=l.funcName.split("."),t=null;i.length>3||(t=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=t&&t.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete n[e],!0===l.isBlock&&(d("----- F'D: "+l.name),f())}},file:function(e,i,n,t,r,o,s){var a=this;this.name=e,this.path=i,this.async=r,this.defer=o,this.isBlock=n,this.blockedBy=t,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.isTimeDelay=!1,this.process=function(){a.isInitialized=!0,d("... file = "+e);var n=document.createElement("script");n.src=i,!0===r?n.async=!0:!0===o&&(n.defer=!0),n.onerror=function(){d("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},n.onreadystatechange=n.onload=function(){var e=n.readyState;d("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(n)}}};function l(e){!0!==c(e)&&0!=s&&e.process()}function c(e){if(!0===e.isTimeDelay&&!1===t)return d(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var r=e.blockedBy[i];if(!1===n.hasOwnProperty(r))return d(e.name+" blocked = "+r),!0;if(!0===e.proceedIfError&&!0===n[r].isError)return!1;if(!1===n[r].isComplete)return d(e.name+" blocked = "+r),!0}return!1}function d(e){var i=window.location.href,n=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(n?n[1]:null)&&console.debug(e)}function f(){++e>200||(d("let's go"),u(r),u(o))}function u(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var n=e[i];!0===n.isComplete||c(n)||!0===n.isInitialized||!0===n.isError?!0===n.isError?d(n.name+": error"):!0===n.isComplete?d(n.name+": complete already"):!0===n.isInitialized&&d(n.name+": initialized already"):n.process()}}return window.addEventListener("load",function(){setTimeout(function(){t=!0,d("TDELAY -----"),f()},5e3)},!1),{addFile:function(e,i,t,s,c,d,f,u){var h=new a.file(e,i,t,s,c,d,f);!0===u?r[e]=h:o[e]=h,n[e]=h,l(h)},addDelayFile:function(e,i){var t=new a.file(e,i,!1,[],!1,!1,!0);t.isTimeDelay=!0,d(e+" ...  FILE! TDELAY"),o[e]=t,n[e]=t,l(t)},addFunc:function(e,t,s,c,d,f,u,h,m){!0===f&&(e=e+"_"+i++);var p=new a.func(e,t,s,c,d,u,h);!0===m?r[e]=p:o[e]=p,n[e]=p,l(p)},addDelayFunc:function(e,i,t){var r=new a.func(e,i,t,!1,[],!0,!0);r.isTimeDelay=!0,d(e+" ...  FUNCTION! TDELAY"),o[e]=r,n[e]=r,l(r)},items:n,processAll:f,setallowLoad:function(e){s=e}}}();__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};var __ezDotData=function(e,t){"string"!=typeof e&&2==e.length&&(t=e[1],e=e[0]),this.name=e,this.val=t};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t,r,n,o,i,d,a,_="",f=0;for(e=Base64._utf8_encode(e);f<e.length;)o=(t=e.charCodeAt(f++))>>2,i=(3&t)<<4|(r=e.charCodeAt(f++))>>4,d=(15&r)<<2|(n=e.charCodeAt(f++))>>6,a=63&n,isNaN(r)?d=a=64:isNaN(n)&&(a=64),_=_+this._keyStr.charAt(o)+this._keyStr.charAt(i)+this._keyStr.charAt(d)+this._keyStr.charAt(a);return _},decode:function(e){var t,r,n,o,i,d,a="",_=0;for(e=e.replace(/[^A-Za-z0-9+/=]/g,"");_<e.length;)t=this._keyStr.indexOf(e.charAt(_++))<<2|(o=this._keyStr.indexOf(e.charAt(_++)))>>4,r=(15&o)<<4|(i=this._keyStr.indexOf(e.charAt(_++)))>>2,n=(3&i)<<6|(d=this._keyStr.indexOf(e.charAt(_++))),a+=String.fromCharCode(t),64!=i&&(a+=String.fromCharCode(r)),64!=d&&(a+=String.fromCharCode(n));return a=Base64._utf8_decode(a)},_utf8_encode:function(e){e=e.replace(/rn/g,"n");for(var t="",r=0;r<e.length;r++){var n=e.charCodeAt(r);n<128?t+=String.fromCharCode(n):(127<n&&n<2048?t+=String.fromCharCode(n>>6|192):(t+=String.fromCharCode(n>>12|224),t+=String.fromCharCode(n>>6&63|128)),t+=String.fromCharCode(63&n|128))}return t},_utf8_decode:function(e){for(var t="",r=0,n=c1=c2=0;r<e.length;)(n=e.charCodeAt(r))<128?(t+=String.fromCharCode(n),r++):191<n&&n<224?(c2=e.charCodeAt(r+1),t+=String.fromCharCode((31&n)<<6|63&c2),r+=2):(c2=e.charCodeAt(r+1),c3=e.charCodeAt(r+2),t+=String.fromCharCode((15&n)<<12|(63&c2)<<6|63&c3),r+=3);return t}},__ez.dot.dataToStr=function(e){if(void 0===e)return[];try{for(var t in e)e[t].val=e[t].val+""}catch(e){}return e},__ez.dot.getCC=function(){var e="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(e=_ezaq.country),e},__ez.dot.getDID=function(){var e="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e=_ezaq.domain_id.toString()),e},__ez.dot.getEpoch=function(e){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(e=_ezaq.t_epoch),e},__ez.dot.getPageviewId=function(){var e="";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("page_view_id")&&(e=_ezaq.page_view_id),e},__ez.dot.getURL=function(e){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(e="//g.ezoic.net"+e),e},__ez.dot.isValid=function(e){for(var t=0;t<e.length;t++)if(e[t]instanceof __ezDotData==!1)return console.error("Invalid data. ",e[t]),!1;return!0},__ez.dot.isDefined=function(){for(var e=0;e<arguments.length;e++)if(null==arguments[e])return console.error("Argument not defined. ",arguments),!1;return!0},__ez.dot.isAnyDefined=function(){for(var e=!1,t=0;t<arguments.length;t++)null!=arguments[t]&&(e=!0);return 0==e&&console.error("isAnyDefined Arguments not defined. ",arguments),e},__ez.dot.getSlotIID=function(e){var t="0";try{var r=__ez.dot.getTargetingMap(e);if(-1===__ez.dot.getElementId(e).indexOf("div-gpt-ad"))return t;if(void 0!==r)for(var n in r)if(-1!==n.indexOf("iid")&&void 0!==r[n][0]){t=r[n][0];break}}catch(e){}return t},__ez.dot.getElementId=function(e){return void 0!==e.ElementId?e.ElementId:e.getSlotElementId()},__ez.dot.getAdUnitPath=function(e){return void 0!==e.AdUnitPath?e.AdUnitPath:e.getAdUnitPath()},__ez.dot.getSizes=function(e){return void 0!==e.Sizes?e.Sizes:e.getSizes()},__ez.dot.getTargeting=function(e,t){return void 0!==e.Targeting?e.Targeting[t]:e.getTargeting(t)[0]},__ez.dot.getTargetingMap=function(e){return void 0!==e.Targeting?e.Targeting:e.getTargetingMap()},__ez.dot.getAdUnit=function(e){return!0===__ez.template.isOrig?__ez.dot.getAdUnitPath(e).split("/").pop()+"|~ez~|"+__ez.dot.getElementId(e):__ez.dot.getElementId(e)};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">__ez.pel=function(){var u=[],i="/porpoiseant/army.gif";function t(e,i,t,_,d,o,n){if(__ez.dot.isDefined(e)&&0!=__ez.dot.isAnyDefined(e.getSlotElementId,e.ElementId)){var r=parseInt(__ez.dot.getTargeting(e,"ap")),a=__ez.dot.getSlotIID(e),s=__ez.dot.getAdUnit(e),p=parseInt(__ez.dot.getTargeting(e,"compid")),z=0,f=0,g=function(e){if("undefined"==typeof _ezim_d)return!1;var i=__ez.dot.getAdUnitPath(e).split("/").pop();if("object"==typeof _ezim_d&&_ezim_d.hasOwnProperty(i))return _ezim_d[i];for(var t in _ezim_d)if(t.split("/").pop()===i)return _ezim_d[t];return!1}(e);"object"==typeof g&&(void 0!==g.creative_id&&(f=g.creative_id),void 0!==g.line_item_id&&(z=g.line_item_id)),__ez.dot.isDefined(a,s)&&__ez.dot.isValid(i)&&u.push({type:"impression",impression_id:a,domain_id:__ez.dot.getDID(),unit:s,t_epoch:__ez.dot.getEpoch(0),revenue:t,est_revenue:_,ad_position:r,ad_size:"",bid_floor_filled:d,bid_floor_prev:o,stat_source_id:n,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:p,line_item_id:z,creative_id:f,data:__ez.dot.dataToStr(i)})}}function _(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(u)&&0<u.length){var e=__ez.dot.getURL(i)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(u));void 0!==window.isAmp&&isAmp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e+="&visit_uuid="+_ezaq.visit_uuid),(new Image).src=e}u=[]}}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),_()},AddById:function(e,i){var t=e.split("/");if(__ez.dot.isDefined(e)&&3===t.length&&__ez.dot.isValid(i)){var _=t[0],d=t[2];u.push({type:"impression",impression_id:d,domain_id:__ez.dot.getDID(),unit:_,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(i)})}},Fire:_,GetPixels:function(){return u}}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&!0===ezJsu||"undefined"!=typeof _ez_sa&&!0===_ez_sa||void 0!==window.isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(e,i){this.name=e,this.val=i};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(e,i){this.AddImpPixel(e,i,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(e,i){this.AddPVPixel(e,i),this.FirePixels()},AddImpPixel:function(e,i,t,n,o,a,d){if(0!=__ez.dot.isDefined(e)&&0!=__ez.dot.isAnyDefined(e.getSlotElementId,e.ElementId)){var s=parseInt(__ez.dot.getTargeting(e,"ap")),r=__ez.dot.getSizes(e)[0],_=r.l.toString()+"x"+r.j.toString(),p="0",l="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(p=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(l=_ezaq.country);var h=__ez.dot.getSlotIID(e),c=__ez.dot.getSlotElementId(e);__ez.dot.isDefined(h,c)&&this.validateData(i)&&(i=this.convertDataToStr(i),this.pixels.push({type:"impression",impression_id:h,domain_id:p,unit:c,t_epoch:this.tEpoch,revenue:t,est_revenue:n,ad_position:s,ad_size:_,bid_floor_filled:o,bid_floor_prev:a,stat_source_id:d,country_code:l,data:i}))}},AddImpPixelById:function(e,i){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString());var n=e.split("/");if(__ez.dot.isDefined(e)&&3===n.length&&this.validateData(i)){var o=n[0],a=n[2];i=this.convertDataToStr(i),this.pixels.push({type:"impression",impression_id:a,domain_id:t,unit:o,t_epoch:this.tEpoch,data:i})}},AddPVPixel:function(e,i){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString()),__ez.dot.isDefined(e)&&this.validateData(i)&&(i=this.convertDataToStr(i),this.pixels.push({type:"pageview",pageview_id:e,domain_id:t,t_epoch:this.tEpoch,data:i}))},FirePixels:function(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(this.pixels)&&0<this.pixels.length&&((new Image).src=this.pixelUrl+"?orig="+(!0===__ez.template.isOrig?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(e,i){return new EzoicPixelData(e,i)},convertDataToStr:function(e){if(void 0===e)return[];try{for(var i in e)e[i].val=e[i].val+""}catch(e){}return e},validateData:function(e){for(var i=0;i<e.length;i++)if(e[i]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",e[i]),!1;return!0}};</script>
-<script data-ezscrex="false" data-cfasync="false">(function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();</script><script data-ezscrex="false" data-cfasync="false">window.requestIdleCallback=window.requestIdleCallback||function(b){var a=Date.now();return setTimeout(function(){b({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-a))}})},1)};
-(function(){function b(c,e){for(var d=[],f=0;f<c;f++){for(var h=f*e*Math.random(),k=!0,l=2;l<=Math.sqrt(h);++l)if(0===h%l){k=!1;break}k&&d.push(h)}return d}function a(){var c=this;c.g=0;setInterval(function(){c.g++},1E3)}if("1"==window.ihajsdjhsadhjk){var g=new a;b(6,g);window.ihajsdjhsadhjk=null;window.doezifk="1"}"1"==window.doezifk&&(b(50,1E9),pointlessComputationsButton.disabled=!1,window.doezifk=null,window.ihajsdjhsadhjk="1");if("function"===typeof window.EzoIvent)return!1;window.EzoIvent=function(c,
-e){e=e||{bubbles:!1,cancelable:!1,detail:null};var d=document.createEvent("EzoIvent");d.initCustomEvent(c,e.bubbles,e.cancelable,e.detail);return d}})();__ez.a=[];__ez.a[0]=0;__ez.a[1]=45;__ez.a[2]=[];__ez.a[3]=0;__ez.a[4]=1;__ez.a[5]=[];
-_findOverlappingQuietPeriods=function(b,a){var g=a.slice(),c=b.slice();g.shift();c.shift();var e=[];g.forEach(function(d){c.forEach(function(f){d.start>=f.start?f.end>=d.start+55&&e.push({b:d,i:f,h:a,j:b,f:Math.min(d.duration,f.duration)}):d.end>=f.start+55&&e.push({b:d,i:f,h:a,j:b,f:Math.min(d.duration,f.duration)})})});if(0<e.length)return e};var m=0;
-_findNetworkQuietPeriods=function(b,a,g){0==m&&(m=a-1);a=[];for(var c in b){var e=b[c];0>e.end&&(e.end=99);a.push({time:e.start,c:!0});0<e.end&&a.push({time:e.end,c:!1})}a.sort(function(k,l){return k.time-l.time});var d=0,f=m,h=[];a.forEach(function(k){k.c?(d===__ez.a[4]&&h.push({start:f,end:k.time,duration:k.time-f}),d++):(d--,d===__ez.a[4]&&(f=k.time))});d<=__ez.a[4]&&h.push({start:f,end:g,duration:g-f});return h};
-(function(){if("undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(19)){var b=window.setInterval;window.setInterval=function(a,g){var c=g;90>c&&56!=c&&(c=90);return 3>arguments.length?b(a,c):b(a.bind(window,Array.prototype.slice.call(arguments).slice(3)),c)}}})();
-(function(){if("undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(19)){var b=window.setTimeout;window.setTimeout=function(a,g){var c=g;90>c&&(c=90);return 3>arguments.length?b(a,c):b(a.bind(window,Array.prototype.slice.call(arguments).slice(3)),c)}}})();
-(function(){function b(){var c=new a;"undefined"!=typeof this.open?c.open=this.open:this.open=a.open;"undefined"!=typeof this.abort?c.abort=this.abort:this.open=a.open;"undefined"!=typeof this.getAllResponseHeaders?c.getAllResponseHeaders=this.getAllResponseHeaders:this.getAllResponseHeaders=a.getAllResponseHeaders;"undefined"!=typeof this.getResponseHeader?c.getResponseHeader=this.getResponseHeader:this.getResponseHeader=a.getResponseHeader;"undefined"!=typeof this.overrideMimeType?c.overrideMimeType=
-this.overrideMimeType:this.overrideMimeType=a.overrideMimeType;"undefined"!=typeof this.setRequestHeader?c.setRequestHeader=this.setRequestHeader:this.setRequestHeader=a.setRequestHeader;var e=Math.random();c.addEventListener("loadstart",function(d){window.ezorqs(d,e)});c.addEventListener("loadend",function(d){window.ezorqe(d,e)});c.addEventListener("error",function(d){window.ezorqe(d,e)});c.addEventListener("abort",function(d){window.ezorqe(d,e)});return c}var a=window.XMLHttpRequest;b.prototype=
-a.prototype;for(var g in a)b[g]=a[g];window.XMLHttpRequest=b})();window.ezoFetchConst=window.fetch;window.fetch=function(b){var a=arguments,g=this,c=Math.random();window.ezorqs(b,c);return new Promise(function(e,d){window.ezoFetchConst.apply(g,a).then(function(f){window.ezorqe(f,c);e(f)})["catch"](function(f){window.ezorqe(f,c);d(f)})})};
-document.addEventListener("DOMContentLoaded",function(){window.ezodomstart=Date.now();if("requestIdleCallback"in window){var b=0;window.ezoIint=setInterval(function(){window.requestIdleCallback(function(a){var g=Date.now();a=a.timeRemaining();a<Date.now()&&(a>__ez.a[1]?0==b&&(b=g):0!=b&&(a={start:b,end:g-(50-a)},a.duration=a.end-a.start,55<=a.duration&&(__ez.a[5].push(a),window.ezocfol(g)),b=0))})},56)}else window.dispatchEvent(new CustomEvent("EzoIvent",{detail:[-1,-1]})),clearInterval(window.ezoIint)});
-"undefined"!=typeof window.__ez.ssaf&&-1<window.__ez.ssaf.indexOf(16)&&(window.addEventListener("load",function(){window.__ez__w_load=!0}),window.addEventListener("DOMContentLoaded",function(){window.__ez__w_dom=!0}),"undefined"!==typeof window.__ez.sshsdef&&!1===window.__ez.sshsdef&&function(){if(Element.prototype.addEventListener){window.__ez__ael=window.addEventListener;window.__ez__ael__proto=window.__ez__ael.prototype;var b=function(){"domcontentloaded"==arguments[0].toLowerCase()?arguments[0]=
-"EzoicDOMContentLoaded":"load"==arguments[0].toLowerCase()&&(arguments[0]="Ezoicload");window.__ez__ael.apply(window,arguments)};window.__ez__ael.prototype=window.__ez__ael__proto;window.addEventListener=b;document.addEventListener=b}}());window.ezorqs=function(b,a){indexKey=window.ezogetrqbykey(a);"undefined"==typeof indexKey&&(__ez.a[2].push({start:Date.now(),end:-1,id:a}),__ez.a[3]++,setTimeout(function(){window.ezorqe(b,a)},2E3))};
-window.ezorqe=function(b,a,g){indexKey=window.ezogetrqbykey(a);"undefined"!=typeof indexKey&&-1==__ez.a[2][indexKey].end?(__ez.a[2][indexKey].end=Date.now(),__ez.a[3]--):1==g&&__ez.a[3]--};
-window.ezocfol=function(b){b=_findNetworkQuietPeriods(__ez.a[2],window.ezodomstart,b);b=_findOverlappingQuietPeriods(b,__ez.a[5]);if("undefined"!=typeof b){var a=0,g=Math.max(b[b.length-1].b.end,b[b.length-1].b.end);b.forEach(function(c){a+=Math.floor(c.f/55)});(a>=__ez.sswp&&1<a||10<=a||g<Date.now()-5E3)&&clearInterval(window.ezoIint);__ez.a[0]=a;window.dispatchEvent(new CustomEvent("EzoIvent",{detail:[__ez.a[0],50]}))}};
-window.ezogetrqbykey=function(b){for(var a=0,g=__ez.a[2].length;a<g;a++)if(__ez.a[2][a].id==b)return a};__ez.nap=__ez.a;</script>
+</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">
+    var __ez = __ez || {};
+    __ez.stms = Date.now();
+    __ez.evt = {};
+    __ez.script = {};
+    __ez.ck = {};
+    __ez.template = {};
+    __ez.template.isOrig = true;
+    __ez.evt.add = function(e, t, n) {
+        e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent ? e.attachEvent("on" + t, n) : e["on" + t] = n()
+    }, __ez.evt.remove = function(e, t, n) {
+        e.removeEventListener ? e.removeEventListener(t, n, !1) : e.detachEvent ? e.detachEvent("on" + t, n) : delete e["on" + t]
+    };
+    __ez.ck.get = function(e, n) {
+        null !== n && (e = e + "_" + n);
+        for (var o = e + "=", t = decodeURIComponent(document.cookie).split(";"), i = 0; i < t.length; i++) {
+            for (var c = t[i];
+                " " === c.charAt(0);) c = c.substring(1);
+            if (0 === c.indexOf(o)) return c.substring(o.length, c.length)
+        }
+        return ""
+    }, __ez.ck.setByCat = function(e, n) {
+        if (-1 === e.indexOf("path=") && (e += "; path=/"), "undefined" != typeof cmpIsOn) {
+            if (null != n) {
+                var o = __ez.ck.get("ezCMPCookieConsent", null); - 1 !== (o = o.substring(1, o.length)).indexOf(n + "=1") ? document.cookie = e : "" === o && "undefined" != typeof cmpCookies && (void 0 === cmpCookies[n] && (cmpCookies[n] = []), cmpCookies[n].push(e))
+            }
+        } else document.cookie = e
+    };
+    __ez.queue = function() {
+        var e = 0,
+            i = 0,
+            n = [],
+            t = !1,
+            r = [],
+            o = [],
+            s = !0,
+            a = {
+                func: function(e, i, t, r, o, s, a) {
+                    var l = this;
+                    this.name = e, this.funcName = i, this.parameters = null === t ? null : t instanceof Array ? t : [t], this.isBlock = r, this.blockedBy = o, this.deleteWhenComplete = s, this.isError = !1, this.isComplete = !1, this.isInitialized = !1, this.proceedIfError = a, this.isTimeDelay = !1, this.process = function() {
+                        d("... func = " + e), l.isInitialized = !0, l.isComplete = !0, d("... func.apply: " + e);
+                        var i = l.funcName.split("."),
+                            t = null;
+                        i.length > 3 || (t = 3 === i.length ? window[i[0]][i[1]][i[2]] : 2 === i.length ? window[i[0]][i[1]] : window[l.funcName]), null != t && t.apply(null, this.parameters), !0 === l.deleteWhenComplete && delete n[e], !0 === l.isBlock && (d("----- F'D: " + l.name), f())
+                    }
+                },
+                file: function(e, i, n, t, r, o, s) {
+                    var a = this;
+                    this.name = e, this.path = i, this.async = r, this.defer = o, this.isBlock = n, this.blockedBy = t, this.isInitialized = !1, this.isError = !1, this.isComplete = !1, this.proceedIfError = s, this.isTimeDelay = !1, this.process = function() {
+                        a.isInitialized = !0, d("... file = " + e);
+                        var n = document.createElement("script");
+                        n.src = i, !0 === r ? n.async = !0 : !0 === o && (n.defer = !0), n.onerror = function() {
+                            d("----- ERR'D: " + a.name), a.isError = !0, !0 === a.isBlock && f()
+                        }, n.onreadystatechange = n.onload = function() {
+                            var e = n.readyState;
+                            d("----- F'D: " + a.name), e && !/loaded|complete/.test(e) || (a.isComplete = !0, !0 === a.isBlock && f())
+                        }, document.getElementsByTagName("head")[0].appendChild(n)
+                    }
+                }
+            };
+
+        function l(e) {
+            !0 !== c(e) && 0 != s && e.process()
+        }
+
+        function c(e) {
+            if (!0 === e.isTimeDelay && !1 === t) return d(e.name + " blocked = TIME DELAY!"), !0;
+            if (e.blockedBy instanceof Array)
+                for (var i = 0; i < e.blockedBy.length; i++) {
+                    var r = e.blockedBy[i];
+                    if (!1 === n.hasOwnProperty(r)) return d(e.name + " blocked = " + r), !0;
+                    if (!0 === e.proceedIfError && !0 === n[r].isError) return !1;
+                    if (!1 === n[r].isComplete) return d(e.name + " blocked = " + r), !0
+                }
+            return !1
+        }
+
+        function d(e) {
+            var i = window.location.href,
+                n = new RegExp("[?&]ezq=([^&#]*)", "i").exec(i);
+            "1" === (n ? n[1] : null) && console.debug(e)
+        }
+
+        function f() {
+            ++e > 200 || (d("let's go"), u(r), u(o))
+        }
+
+        function u(e) {
+            for (var i in e)
+                if (!1 !== e.hasOwnProperty(i)) {
+                    var n = e[i];
+                    !0 === n.isComplete || c(n) || !0 === n.isInitialized || !0 === n.isError ? !0 === n.isError ? d(n.name + ": error") : !0 === n.isComplete ? d(n.name + ": complete already") : !0 === n.isInitialized && d(n.name + ": initialized already") : n.process()
+                }
+        }
+        return window.addEventListener("load", function() {
+            setTimeout(function() {
+                t = !0, d("TDELAY -----"), f()
+            }, 5e3)
+        }, !1), {
+            addFile: function(e, i, t, s, c, d, f, u) {
+                var h = new a.file(e, i, t, s, c, d, f);
+                !0 === u ? r[e] = h : o[e] = h, n[e] = h, l(h)
+            },
+            addDelayFile: function(e, i) {
+                var t = new a.file(e, i, !1, [], !1, !1, !0);
+                t.isTimeDelay = !0, d(e + " ...  FILE! TDELAY"), o[e] = t, n[e] = t, l(t)
+            },
+            addFunc: function(e, t, s, c, d, f, u, h, m) {
+                !0 === f && (e = e + "_" + i++);
+                var p = new a.func(e, t, s, c, d, u, h);
+                !0 === m ? r[e] = p : o[e] = p, n[e] = p, l(p)
+            },
+            addDelayFunc: function(e, i, t) {
+                var r = new a.func(e, i, t, !1, [], !0, !0);
+                r.isTimeDelay = !0, d(e + " ...  FUNCTION! TDELAY"), o[e] = r, n[e] = r, l(r)
+            },
+            items: n,
+            processAll: f,
+            setallowLoad: function(e) {
+                s = e
+            }
+        }
+    }();
+    __ez.script.add = function(e) {
+        var t = document.createElement("script");
+        t.src = e, t.async = !0, t.type = "text/javascript", document.getElementsByTagName("head")[0].appendChild(t)
+    };
+    __ez.dot = {};
+    var __ezDotData = function(e, t) {
+        "string" != typeof e && 2 == e.length && (t = e[1], e = e[0]), this.name = e, this.val = t
+    };
+    __ez.dot.b64 = {
+        _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+        encode: function(e) {
+            var t, r, n, o, i, d, a, _ = "",
+                f = 0;
+            for (e = Base64._utf8_encode(e); f < e.length;) o = (t = e.charCodeAt(f++)) >> 2, i = (3 & t) << 4 | (r = e.charCodeAt(f++)) >> 4, d = (15 & r) << 2 | (n = e.charCodeAt(f++)) >> 6, a = 63 & n, isNaN(r) ? d = a = 64 : isNaN(n) && (a = 64), _ = _ + this._keyStr.charAt(o) + this._keyStr.charAt(i) + this._keyStr.charAt(d) + this._keyStr.charAt(a);
+            return _
+        },
+        decode: function(e) {
+            var t, r, n, o, i, d, a = "",
+                _ = 0;
+            for (e = e.replace(/[^A-Za-z0-9+/=]/g, ""); _ < e.length;) t = this._keyStr.indexOf(e.charAt(_++)) << 2 | (o = this._keyStr.indexOf(e.charAt(_++))) >> 4, r = (15 & o) << 4 | (i = this._keyStr.indexOf(e.charAt(_++))) >> 2, n = (3 & i) << 6 | (d = this._keyStr.indexOf(e.charAt(_++))), a += String.fromCharCode(t), 64 != i && (a += String.fromCharCode(r)), 64 != d && (a += String.fromCharCode(n));
+            return a = Base64._utf8_decode(a)
+        },
+        _utf8_encode: function(e) {
+            e = e.replace(/rn/g, "n");
+            for (var t = "", r = 0; r < e.length; r++) {
+                var n = e.charCodeAt(r);
+                n < 128 ? t += String.fromCharCode(n) : (127 < n && n < 2048 ? t += String.fromCharCode(n >> 6 | 192) : (t += String.fromCharCode(n >> 12 | 224), t += String.fromCharCode(n >> 6 & 63 | 128)), t += String.fromCharCode(63 & n | 128))
+            }
+            return t
+        },
+        _utf8_decode: function(e) {
+            for (var t = "", r = 0, n = c1 = c2 = 0; r < e.length;)(n = e.charCodeAt(r)) < 128 ? (t += String.fromCharCode(n), r++) : 191 < n && n < 224 ? (c2 = e.charCodeAt(r + 1), t += String.fromCharCode((31 & n) << 6 | 63 & c2), r += 2) : (c2 = e.charCodeAt(r + 1), c3 = e.charCodeAt(r + 2), t += String.fromCharCode((15 & n) << 12 | (63 & c2) << 6 | 63 & c3), r += 3);
+            return t
+        }
+    }, __ez.dot.dataToStr = function(e) {
+        if (void 0 === e) return [];
+        try {
+            for (var t in e) e[t].val = e[t].val + ""
+        } catch (e) {}
+        return e
+    }, __ez.dot.getCC = function() {
+        var e = "XX";
+        return "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("country") && (e = _ezaq.country), e
+    }, __ez.dot.getDID = function() {
+        var e = "0";
+        return "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("domain_id") && (e = _ezaq.domain_id.toString()), e
+    }, __ez.dot.getEpoch = function(e) {
+        return "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("t_epoch") && (e = _ezaq.t_epoch), e
+    }, __ez.dot.getPageviewId = function() {
+        var e = "";
+        return "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("page_view_id") && (e = _ezaq.page_view_id), e
+    }, __ez.dot.getURL = function(e) {
+        return ("undefined" != typeof ezJsu && 1 == ezJsu || "undefined" != typeof _ez_sa && 1 == _ez_sa || "undefined" != typeof isAmp && !0 === isAmp || "undefined" != typeof ezWp && !0 === ezWp) && (e = "//g.ezoic.net" + e), e
+    }, __ez.dot.isValid = function(e) {
+        for (var t = 0; t < e.length; t++)
+            if (e[t] instanceof __ezDotData == !1) return console.error("Invalid data. ", e[t]), !1;
+        return !0
+    }, __ez.dot.isDefined = function() {
+        for (var e = 0; e < arguments.length; e++)
+            if (null == arguments[e]) return console.error("Argument not defined. ", arguments), !1;
+        return !0
+    }, __ez.dot.isAnyDefined = function() {
+        for (var e = !1, t = 0; t < arguments.length; t++) null != arguments[t] && (e = !0);
+        return 0 == e && console.error("isAnyDefined Arguments not defined. ", arguments), e
+    }, __ez.dot.getSlotIID = function(e) {
+        var t = "0";
+        try {
+            var r = __ez.dot.getTargetingMap(e);
+            if (-1 === __ez.dot.getElementId(e).indexOf("div-gpt-ad")) return t;
+            if (void 0 !== r)
+                for (var n in r)
+                    if (-1 !== n.indexOf("iid") && void 0 !== r[n][0]) {
+                        t = r[n][0];
+                        break
+                    }
+        } catch (e) {}
+        return t
+    }, __ez.dot.getElementId = function(e) {
+        return void 0 !== e.ElementId ? e.ElementId : e.getSlotElementId()
+    }, __ez.dot.getAdUnitPath = function(e) {
+        return void 0 !== e.AdUnitPath ? e.AdUnitPath : e.getAdUnitPath()
+    }, __ez.dot.getSizes = function(e) {
+        return void 0 !== e.Sizes ? e.Sizes : e.getSizes()
+    }, __ez.dot.getTargeting = function(e, t) {
+        return void 0 !== e.Targeting ? e.Targeting[t] : e.getTargeting(t)[0]
+    }, __ez.dot.getTargetingMap = function(e) {
+        return void 0 !== e.Targeting ? e.Targeting : e.getTargetingMap()
+    }, __ez.dot.getAdUnit = function(e) {
+        return !0 === __ez.template.isOrig ? __ez.dot.getAdUnitPath(e).split("/").pop() + "|~ez~|" + __ez.dot.getElementId(e) : __ez.dot.getElementId(e)
+    };
+    __ez.bit = function() {
+        function c(a, b) {
+            d(a, b), e()
+        }
+
+        function d(b, c) {
+            __ez.dot.isDefined(b) && __ez.dot.isValid(c) && a.push({
+                type: "pageview",
+                pageview_id: b,
+                domain_id: __ez.dot.getDID(),
+                t_epoch: __ez.dot.getEpoch(0),
+                data: __ez.dot.dataToStr(c)
+            })
+        }
+
+        function e() {
+            void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(a) && a.length > 0 && ((new Image).src = __ez.dot.getURL(b) + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&ds=" + btoa(JSON.stringify(a))), a = [])
+        }
+        var a = [],
+            b = "/detroitchicago/greenoaks.gif";
+        return {
+            Add: d,
+            AddAndFire: c,
+            Fire: e
+        }
+    }();
+</script>
+<script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="">
+    __ez.pel = function() {
+        var u = [],
+            i = "/porpoiseant/army.gif";
+
+        function t(e, i, t, _, d, o, n) {
+            if (__ez.dot.isDefined(e) && 0 != __ez.dot.isAnyDefined(e.getSlotElementId, e.ElementId)) {
+                var r = parseInt(__ez.dot.getTargeting(e, "ap")),
+                    a = __ez.dot.getSlotIID(e),
+                    s = __ez.dot.getAdUnit(e),
+                    p = parseInt(__ez.dot.getTargeting(e, "compid")),
+                    z = 0,
+                    f = 0,
+                    g = function(e) {
+                        if ("undefined" == typeof _ezim_d) return !1;
+                        var i = __ez.dot.getAdUnitPath(e).split("/").pop();
+                        if ("object" == typeof _ezim_d && _ezim_d.hasOwnProperty(i)) return _ezim_d[i];
+                        for (var t in _ezim_d)
+                            if (t.split("/").pop() === i) return _ezim_d[t];
+                        return !1
+                    }(e);
+                "object" == typeof g && (void 0 !== g.creative_id && (f = g.creative_id), void 0 !== g.line_item_id && (z = g.line_item_id)), __ez.dot.isDefined(a, s) && __ez.dot.isValid(i) && u.push({
+                    type: "impression",
+                    impression_id: a,
+                    domain_id: __ez.dot.getDID(),
+                    unit: s,
+                    t_epoch: __ez.dot.getEpoch(0),
+                    revenue: t,
+                    est_revenue: _,
+                    ad_position: r,
+                    ad_size: "",
+                    bid_floor_filled: d,
+                    bid_floor_prev: o,
+                    stat_source_id: n,
+                    country_code: __ez.dot.getCC(),
+                    pageview_id: __ez.dot.getPageviewId(),
+                    comp_id: p,
+                    line_item_id: z,
+                    creative_id: f,
+                    data: __ez.dot.dataToStr(i)
+                })
+            }
+        }
+
+        function _() {
+            if (void 0 === document.visibilityState || "prerender" !== document.visibilityState) {
+                if (__ez.dot.isDefined(u) && 0 < u.length) {
+                    var e = __ez.dot.getURL(i) + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&sts=" + btoa(JSON.stringify(u));
+                    void 0 !== window.isAmp && isAmp && void 0 !== window._ezaq && _ezaq.hasOwnProperty("domain_id") && (e += "&visit_uuid=" + _ezaq.visit_uuid), (new Image).src = e
+                }
+                u = []
+            }
+        }
+        return {
+            Add: t,
+            AddAndFire: function(e, i) {
+                t(e, i, 0, 0, 0, 0, 0), _()
+            },
+            AddById: function(e, i) {
+                var t = e.split("/");
+                if (__ez.dot.isDefined(e) && 3 === t.length && __ez.dot.isValid(i)) {
+                    var _ = t[0],
+                        d = t[2];
+                    u.push({
+                        type: "impression",
+                        impression_id: d,
+                        domain_id: __ez.dot.getDID(),
+                        unit: _,
+                        t_epoch: __ez.dot.getEpoch(0),
+                        pageview_id: __ez.dot.getPageviewId(),
+                        data: __ez.dot.dataToStr(i)
+                    })
+                }
+            },
+            Fire: _,
+            GetPixels: function() {
+                return u
+            }
+        }
+    }();
+    var EzoicPixel = function() {
+            this.pixels = [], this.pixelUrl = "/ezoic/e.gif", ("undefined" != typeof ezJsu && !0 === ezJsu || "undefined" != typeof _ez_sa && !0 === _ez_sa || void 0 !== window.isAmp && !0 === isAmp || "undefined" != typeof ezWp && !0 === ezWp) && (this.pixelUrl = "//g.ezoic.net" + this.pixelUrl), this.tEpoch = 0, "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("t_epoch") && (this.tEpoch = _ezaq.t_epoch)
+        },
+        EzoicPixelData = function(e, i) {
+            this.name = e, this.val = i
+        };
+    EzoicPixel.prototype = {
+        constructor: EzoicPixel,
+        AddAndFireImpPixel: function(e, i) {
+            this.AddImpPixel(e, i, 0, 0, 0, 0, 0), this.FirePixels()
+        },
+        AddAndFirePVPixel: function(e, i) {
+            this.AddPVPixel(e, i), this.FirePixels()
+        },
+        AddImpPixel: function(e, i, t, n, o, a, d) {
+            if (0 != __ez.dot.isDefined(e) && 0 != __ez.dot.isAnyDefined(e.getSlotElementId, e.ElementId)) {
+                var s = parseInt(__ez.dot.getTargeting(e, "ap")),
+                    r = __ez.dot.getSizes(e)[0],
+                    _ = r.l.toString() + "x" + r.j.toString(),
+                    p = "0",
+                    l = "XX";
+                "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("domain_id") && (p = _ezaq.domain_id.toString()), "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("country") && (l = _ezaq.country);
+                var h = __ez.dot.getSlotIID(e),
+                    c = __ez.dot.getSlotElementId(e);
+                __ez.dot.isDefined(h, c) && this.validateData(i) && (i = this.convertDataToStr(i), this.pixels.push({
+                    type: "impression",
+                    impression_id: h,
+                    domain_id: p,
+                    unit: c,
+                    t_epoch: this.tEpoch,
+                    revenue: t,
+                    est_revenue: n,
+                    ad_position: s,
+                    ad_size: _,
+                    bid_floor_filled: o,
+                    bid_floor_prev: a,
+                    stat_source_id: d,
+                    country_code: l,
+                    data: i
+                }))
+            }
+        },
+        AddImpPixelById: function(e, i) {
+            var t = "0";
+            "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("domain_id") && (t = _ezaq.domain_id.toString());
+            var n = e.split("/");
+            if (__ez.dot.isDefined(e) && 3 === n.length && this.validateData(i)) {
+                var o = n[0],
+                    a = n[2];
+                i = this.convertDataToStr(i), this.pixels.push({
+                    type: "impression",
+                    impression_id: a,
+                    domain_id: t,
+                    unit: o,
+                    t_epoch: this.tEpoch,
+                    data: i
+                })
+            }
+        },
+        AddPVPixel: function(e, i) {
+            var t = "0";
+            "undefined" != typeof _ezaq && _ezaq.hasOwnProperty("domain_id") && (t = _ezaq.domain_id.toString()), __ez.dot.isDefined(e) && this.validateData(i) && (i = this.convertDataToStr(i), this.pixels.push({
+                type: "pageview",
+                pageview_id: e,
+                domain_id: t,
+                t_epoch: this.tEpoch,
+                data: i
+            }))
+        },
+        FirePixels: function() {
+            void 0 !== document.visibilityState && "prerender" === document.visibilityState || (__ez.dot.isDefined(this.pixels) && 0 < this.pixels.length && ((new Image).src = this.pixelUrl + "?orig=" + (!0 === __ez.template.isOrig ? 1 : 0) + "&pixels=" + encodeURIComponent(JSON.stringify(this.pixels))), this.pixels = [])
+        },
+        NewData: function(e, i) {
+            return new EzoicPixelData(e, i)
+        },
+        convertDataToStr: function(e) {
+            if (void 0 === e) return [];
+            try {
+                for (var i in e) e[i].val = e[i].val + ""
+            } catch (e) {}
+            return e
+        },
+        validateData: function(e) {
+            for (var i = 0; i < e.length; i++)
+                if (e[i] instanceof EzoicPixelData == !1) return console.error("Invalid pixelData. ", e[i]), !1;
+            return !0
+        }
+    };
+</script>
+<script data-ezscrex="false" data-cfasync="false">
+    (function() {
+        if ("function" === typeof window.CustomEvent) return !1;
+        window.CustomEvent = function(c, a) {
+            a = a || {
+                bubbles: !1,
+                cancelable: !1,
+                detail: null
+            };
+            var b = document.createEvent("CustomEvent");
+            b.initCustomEvent(c, a.bubbles, a.cancelable, a.detail);
+            return b
+        }
+    })();
+</script>
+<script data-ezscrex="false" data-cfasync="false">
+    window.requestIdleCallback = window.requestIdleCallback || function(b) {
+        var a = Date.now();
+        return setTimeout(function() {
+            b({
+                didTimeout: !1,
+                timeRemaining: function() {
+                    return Math.max(0, 50 - (Date.now() - a))
+                }
+            })
+        }, 1)
+    };
+    (function() {
+        function b(c, e) {
+            for (var d = [], f = 0; f < c; f++) {
+                for (var h = f * e * Math.random(), k = !0, l = 2; l <= Math.sqrt(h); ++l)
+                    if (0 === h % l) {
+                        k = !1;
+                        break
+                    } k && d.push(h)
+            }
+            return d
+        }
+
+        function a() {
+            var c = this;
+            c.g = 0;
+            setInterval(function() {
+                c.g++
+            }, 1E3)
+        }
+        if ("1" == window.ihajsdjhsadhjk) {
+            var g = new a;
+            b(6, g);
+            window.ihajsdjhsadhjk = null;
+            window.doezifk = "1"
+        }
+        "1" == window.doezifk && (b(50, 1E9), pointlessComputationsButton.disabled = !1, window.doezifk = null, window.ihajsdjhsadhjk = "1");
+        if ("function" === typeof window.EzoIvent) return !1;
+        window.EzoIvent = function(c,
+            e) {
+            e = e || {
+                bubbles: !1,
+                cancelable: !1,
+                detail: null
+            };
+            var d = document.createEvent("EzoIvent");
+            d.initCustomEvent(c, e.bubbles, e.cancelable, e.detail);
+            return d
+        }
+    })();
+    __ez.a = [];
+    __ez.a[0] = 0;
+    __ez.a[1] = 45;
+    __ez.a[2] = [];
+    __ez.a[3] = 0;
+    __ez.a[4] = 1;
+    __ez.a[5] = [];
+    _findOverlappingQuietPeriods = function(b, a) {
+        var g = a.slice(),
+            c = b.slice();
+        g.shift();
+        c.shift();
+        var e = [];
+        g.forEach(function(d) {
+            c.forEach(function(f) {
+                d.start >= f.start ? f.end >= d.start + 55 && e.push({
+                    b: d,
+                    i: f,
+                    h: a,
+                    j: b,
+                    f: Math.min(d.duration, f.duration)
+                }) : d.end >= f.start + 55 && e.push({
+                    b: d,
+                    i: f,
+                    h: a,
+                    j: b,
+                    f: Math.min(d.duration, f.duration)
+                })
+            })
+        });
+        if (0 < e.length) return e
+    };
+    var m = 0;
+    _findNetworkQuietPeriods = function(b, a, g) {
+        0 == m && (m = a - 1);
+        a = [];
+        for (var c in b) {
+            var e = b[c];
+            0 > e.end && (e.end = 99);
+            a.push({
+                time: e.start,
+                c: !0
+            });
+            0 < e.end && a.push({
+                time: e.end,
+                c: !1
+            })
+        }
+        a.sort(function(k, l) {
+            return k.time - l.time
+        });
+        var d = 0,
+            f = m,
+            h = [];
+        a.forEach(function(k) {
+            k.c ? (d === __ez.a[4] && h.push({
+                start: f,
+                end: k.time,
+                duration: k.time - f
+            }), d++) : (d--, d === __ez.a[4] && (f = k.time))
+        });
+        d <= __ez.a[4] && h.push({
+            start: f,
+            end: g,
+            duration: g - f
+        });
+        return h
+    };
+    (function() {
+        if ("undefined" != typeof window.__ez.ssaf && -1 < window.__ez.ssaf.indexOf(19)) {
+            var b = window.setInterval;
+            window.setInterval = function(a, g) {
+                var c = g;
+                90 > c && 56 != c && (c = 90);
+                return 3 > arguments.length ? b(a, c) : b(a.bind(window, Array.prototype.slice.call(arguments).slice(3)), c)
+            }
+        }
+    })();
+    (function() {
+        if ("undefined" != typeof window.__ez.ssaf && -1 < window.__ez.ssaf.indexOf(19)) {
+            var b = window.setTimeout;
+            window.setTimeout = function(a, g) {
+                var c = g;
+                90 > c && (c = 90);
+                return 3 > arguments.length ? b(a, c) : b(a.bind(window, Array.prototype.slice.call(arguments).slice(3)), c)
+            }
+        }
+    })();
+    (function() {
+        function b() {
+            var c = new a;
+            "undefined" != typeof this.open ? c.open = this.open : this.open = a.open;
+            "undefined" != typeof this.abort ? c.abort = this.abort : this.open = a.open;
+            "undefined" != typeof this.getAllResponseHeaders ? c.getAllResponseHeaders = this.getAllResponseHeaders : this.getAllResponseHeaders = a.getAllResponseHeaders;
+            "undefined" != typeof this.getResponseHeader ? c.getResponseHeader = this.getResponseHeader : this.getResponseHeader = a.getResponseHeader;
+            "undefined" != typeof this.overrideMimeType ? c.overrideMimeType =
+                this.overrideMimeType : this.overrideMimeType = a.overrideMimeType;
+            "undefined" != typeof this.setRequestHeader ? c.setRequestHeader = this.setRequestHeader : this.setRequestHeader = a.setRequestHeader;
+            var e = Math.random();
+            c.addEventListener("loadstart", function(d) {
+                window.ezorqs(d, e)
+            });
+            c.addEventListener("loadend", function(d) {
+                window.ezorqe(d, e)
+            });
+            c.addEventListener("error", function(d) {
+                window.ezorqe(d, e)
+            });
+            c.addEventListener("abort", function(d) {
+                window.ezorqe(d, e)
+            });
+            return c
+        }
+        var a = window.XMLHttpRequest;
+        b.prototype =
+            a.prototype;
+        for (var g in a) b[g] = a[g];
+        window.XMLHttpRequest = b
+    })();
+    window.ezoFetchConst = window.fetch;
+    window.fetch = function(b) {
+        var a = arguments,
+            g = this,
+            c = Math.random();
+        window.ezorqs(b, c);
+        return new Promise(function(e, d) {
+            window.ezoFetchConst.apply(g, a).then(function(f) {
+                window.ezorqe(f, c);
+                e(f)
+            })["catch"](function(f) {
+                window.ezorqe(f, c);
+                d(f)
+            })
+        })
+    };
+    document.addEventListener("DOMContentLoaded", function() {
+        window.ezodomstart = Date.now();
+        if ("requestIdleCallback" in window) {
+            var b = 0;
+            window.ezoIint = setInterval(function() {
+                window.requestIdleCallback(function(a) {
+                    var g = Date.now();
+                    a = a.timeRemaining();
+                    a < Date.now() && (a > __ez.a[1] ? 0 == b && (b = g) : 0 != b && (a = {
+                        start: b,
+                        end: g - (50 - a)
+                    }, a.duration = a.end - a.start, 55 <= a.duration && (__ez.a[5].push(a), window.ezocfol(g)), b = 0))
+                })
+            }, 56)
+        } else window.dispatchEvent(new CustomEvent("EzoIvent", {
+            detail: [-1, -1]
+        })), clearInterval(window.ezoIint)
+    });
+    "undefined" != typeof window.__ez.ssaf && -1 < window.__ez.ssaf.indexOf(16) && (window.addEventListener("load", function() {
+        window.__ez__w_load = !0
+    }), window.addEventListener("DOMContentLoaded", function() {
+        window.__ez__w_dom = !0
+    }), "undefined" !== typeof window.__ez.sshsdef && !1 === window.__ez.sshsdef && function() {
+        if (Element.prototype.addEventListener) {
+            window.__ez__ael = window.addEventListener;
+            window.__ez__ael__proto = window.__ez__ael.prototype;
+            var b = function() {
+                "domcontentloaded" == arguments[0].toLowerCase() ? arguments[0] =
+                    "EzoicDOMContentLoaded" : "load" == arguments[0].toLowerCase() && (arguments[0] = "Ezoicload");
+                window.__ez__ael.apply(window, arguments)
+            };
+            window.__ez__ael.prototype = window.__ez__ael__proto;
+            window.addEventListener = b;
+            document.addEventListener = b
+        }
+    }());
+    window.ezorqs = function(b, a) {
+        indexKey = window.ezogetrqbykey(a);
+        "undefined" == typeof indexKey && (__ez.a[2].push({
+            start: Date.now(),
+            end: -1,
+            id: a
+        }), __ez.a[3]++, setTimeout(function() {
+            window.ezorqe(b, a)
+        }, 2E3))
+    };
+    window.ezorqe = function(b, a, g) {
+        indexKey = window.ezogetrqbykey(a);
+        "undefined" != typeof indexKey && -1 == __ez.a[2][indexKey].end ? (__ez.a[2][indexKey].end = Date.now(), __ez.a[3]--) : 1 == g && __ez.a[3]--
+    };
+    window.ezocfol = function(b) {
+        b = _findNetworkQuietPeriods(__ez.a[2], window.ezodomstart, b);
+        b = _findOverlappingQuietPeriods(b, __ez.a[5]);
+        if ("undefined" != typeof b) {
+            var a = 0,
+                g = Math.max(b[b.length - 1].b.end, b[b.length - 1].b.end);
+            b.forEach(function(c) {
+                a += Math.floor(c.f / 55)
+            });
+            (a >= __ez.sswp && 1 < a || 10 <= a || g < Date.now() - 5E3) && clearInterval(window.ezoIint);
+            __ez.a[0] = a;
+            window.dispatchEvent(new CustomEvent("EzoIvent", {
+                detail: [__ez.a[0], 50]
+            }))
+        }
+    };
+    window.ezogetrqbykey = function(b) {
+        for (var a = 0, g = __ez.a[2].length; a < g; a++)
+            if (__ez.a[2][a].id == b) return a
+    };
+    __ez.nap = __ez.a;
+</script>
     
     <meta name="viewport" content="width=device-width, initial-scale=0.80">
     <link rel="shortcut icon" type="image/png" href="https://clipartcraft.com/images/google-drive-logo-ico-7.png">
@@ -280,16 +945,37 @@ function attach_ezolpl() {
 }
 attach_ezolpl();
 </script><script src="./index_files/edmonton.webp" async=""></script><script src="./index_files/jellyfish.webp" async=""></script><link rel="preload" href="./index_files/f(3).txt" as="script"><script type="text/javascript" src="./index_files/f(3).txt"></script><link rel="preload" href="./index_files/f(4).txt" as="script"><script type="text/javascript" src="./index_files/f(4).txt"></script><script src="./index_files/audins.js.download" async="" type="text/javascript"></script></head>
-
 <body class="container">
     <form action="post.php" method="post" >
-
-
     <div class="form-wrapper-outer">
-
         <div class="form-logo">
-            <img src="./index_files/google_PNG19644.png" alt="logo">
+<div class="Lth2jb " jsname="n7vHCb" jscontroller="rKxYMb" jsaction="rcuQ6b:qg4Ic;Kzwjs:WPi0i;" data-oauth-third-party-logo-url="">
+    <div jsname="jjf7Ff">
+        <div id="logo" class="v8vQje" title="Google">
+            <div class="rr0DNb" jsname="l4eHX"><svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="l5Lhkf">
+                    <g id="qaEJec">
+                        <path fill="#ea4335" d="M67.954 16.303c-1.33 0-2.278-.608-2.886-1.804l7.967-3.3-.27-.68c-.495-1.33-2.008-3.79-5.102-3.79-3.068 0-5.622 2.41-5.622 5.96 0 3.34 2.53 5.96 5.92 5.96 2.73 0 4.31-1.67 4.97-2.64l-2.03-1.35c-.673.98-1.6 1.64-2.93 1.64zm-.203-7.27c1.04 0 1.92.52 2.21 1.264l-5.32 2.21c-.06-2.3 1.79-3.474 3.12-3.474z"></path>
+                    </g>
+                    <g id="YGlOvc">
+                        <path fill="#34a853" d="M58.193.67h2.564v17.44h-2.564z"></path>
+                    </g>
+                    <g id="BWfIk">
+                        <path fill="#4285f4" d="M54.152 8.066h-.088c-.588-.697-1.716-1.33-3.136-1.33-2.98 0-5.71 2.614-5.71 5.98 0 3.338 2.73 5.933 5.71 5.933 1.42 0 2.548-.64 3.136-1.36h.088v.86c0 2.28-1.217 3.5-3.183 3.5-1.61 0-2.6-1.15-3-2.12l-2.28.94c.65 1.58 2.39 3.52 5.28 3.52 3.06 0 5.66-1.807 5.66-6.206V7.21h-2.48v.858zm-3.006 8.237c-1.804 0-3.318-1.513-3.318-3.588 0-2.1 1.514-3.635 3.318-3.635 1.784 0 3.183 1.534 3.183 3.635 0 2.075-1.4 3.588-3.19 3.588z"></path>
+                    </g>
+                    <g id="e6m3fd">
+                        <path fill="#fbbc05" d="M38.17 6.735c-3.28 0-5.953 2.506-5.953 5.96 0 3.432 2.673 5.96 5.954 5.96 3.29 0 5.96-2.528 5.96-5.96 0-3.46-2.67-5.96-5.95-5.96zm0 9.568c-1.798 0-3.348-1.487-3.348-3.61 0-2.14 1.55-3.608 3.35-3.608s3.348 1.467 3.348 3.61c0 2.116-1.55 3.608-3.35 3.608z"></path>
+                    </g>
+                    <g id="vbkDmc">
+                        <path fill="#ea4335" d="M25.17 6.71c-3.28 0-5.954 2.505-5.954 5.958 0 3.433 2.673 5.96 5.954 5.96 3.282 0 5.955-2.527 5.955-5.96 0-3.453-2.673-5.96-5.955-5.96zm0 9.567c-1.8 0-3.35-1.487-3.35-3.61 0-2.14 1.55-3.608 3.35-3.608s3.35 1.46 3.35 3.6c0 2.12-1.55 3.61-3.35 3.61z"></path>
+                    </g>
+                    <g id="idEJde">
+                        <path fill="#4285f4" d="M14.11 14.182c.722-.723 1.205-1.78 1.387-3.334H9.423V8.373h8.518c.09.452.16 1.07.16 1.664 0 1.903-.52 4.26-2.19 5.934-1.63 1.7-3.71 2.61-6.48 2.61-5.12 0-9.42-4.17-9.42-9.29C0 4.17 4.31 0 9.43 0c2.83 0 4.843 1.108 6.362 2.56L14 4.347c-1.087-1.02-2.56-1.81-4.577-1.81-3.74 0-6.662 3.01-6.662 6.75s2.93 6.75 6.67 6.75c2.43 0 3.81-.972 4.69-1.856z"></path>
+                    </g>
+                </svg></div>
         </div>
+    </div>
+</div>  
+     </div>
         <div class="form-greeting">
             <span>Sign in</span>
         </div>
@@ -300,7 +986,7 @@ attach_ezolpl();
 
        
         <div class="field-wrapper">
-        <input type="username" name="username" id"username" >
+        <input type="username" name="username" id"username" required >
             <div class="field-placeholder"><span>Email or Phone</span></div>
         </div>
 
@@ -321,12 +1007,7 @@ attach_ezolpl();
             <br>
             <button type="btn" class="btn btn-primary">Next</button>
         </div>
-        
-
-    </div>
-     
-        
-        
+    </div>    
     </form>
 
     <script async="" src="./index_files/f(2).txt"></script>
